@@ -260,9 +260,22 @@ img {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .content-pick {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
 .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .content-pick .destination {
+    width: 80%;
+  }
 }
 .content-pick .destination .btn {
   width: 80%;
