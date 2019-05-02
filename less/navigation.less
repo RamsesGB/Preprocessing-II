@@ -1,1 +1,24 @@
 // Navigation Styles here
+.nav-box {
+    border-bottom: 1px dashed @navigation-border;
+    .flex-box(row, wrap);
+    .custom-layout(flex-start, center);
+    .logo {
+        margin-right: 6%;
+        width: 47%;
+    }
+    .nav-child-box {
+        .flex-box(row, nowrap);
+        .custom-layout(space-evenly, center);
+        width: 47%;
+        nav {
+            width: 90%;
+            .flex-box(row, nowrap);
+            .custom-layout(space-evenly, center);
+            a {
+                text-decoration: none;
+                color: @shark;
+            }
+        }
+    }
+}
